@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "allowJs": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "types": ["node", "./types"],
+    "paths": {
+      "@command-shared": ["./src/commands/_shared"],
+      "@package-json": ["./package.json"],
+      "@utils/*": ["./src/utils/*"],
+    }
+  },
+  "include": ["src"]
+}
